@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEllo!!</h1>
+    <button> <a href="/new">Enter new user</a></button>
+    <h3>Current Users</h3>
+    <ul>
+        <% locals.usernames.map((user) => { %>
+            <li><%= user.username %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
